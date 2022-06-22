@@ -34,9 +34,4 @@ export class CurrencyInputComponent  {
     this.currency = currValue.value;
     this.currencyChange.emit(this.currency);
   }
-
-  check(value: any): any {
-    console.log(value);
-    return value;
-  }
 }

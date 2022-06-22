@@ -9,23 +9,13 @@ enum Direction {
   UNSET
 }
 
-enum Source {
-  INPUT,
-  SELECT
-}
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-
   title = 'ITop1000Test';
-
-  get source() {
-    return Source;
-  } 
 
   valueRight: number;
   valueLeft: number;
@@ -67,11 +57,11 @@ export class AppComponent implements OnInit {
   }
 
 
-  onLeftChange(source: Source = Source.INPUT): void {
+  onLeftChange(): void {
     this._onChange(Direction.LTR);
   }
 
-  onRightChange(source: Source = Source.INPUT): void {
+  onRightChange(): void {
     this._onChange(Direction.RTL);
   }
 

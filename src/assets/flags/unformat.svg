@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-unformat" viewBox="0 0 640 480">
+  <defs>
+    <style>.cls-1{fill:#5a5b5c;}.cls-2{fill:#e6e6e6;fill-rule:evenodd;}</style>
+  </defs>
+  <rect class="cls-1" width="640" height="480"/>
+  <path class="cls-2" d="M320,30.56c115.67,0,209.44,93.77,209.44,209.44S435.67,449.44,320,449.44,110.56,355.67,110.56,240,204.33,30.56,320,30.56ZM447.13,151.4,231.4,367.13A155,155,0,0,0,447.13,151.4ZM192.87,328.6,408.6,112.87A155,155,0,0,0,192.87,328.6Z"/>
+</svg>

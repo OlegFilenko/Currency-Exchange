@@ -13,21 +13,23 @@
     </div>
   </div>
   <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign.gt-xs="start center">
-    <currency-input #currInpRight
+    <currency-input #currInpLeft
                     [(value)]="valueLeft"
                     [(currency)]="currencyLeft"
                     (valueChange)="onLeftChange()"
-                    (currencyChange)="onLeftChange()">
+                    (currencyChange)="onLeftChange()"
+                    [busy]="currencyRight">
     </currency-input>
     <button mat-icon-button color="primary" (click)="swap()" fxFlexAlign.lt-sm="center">
       <mat-icon fxHide.lt-sm>swap_horiz</mat-icon>
       <mat-icon fxHide fxShow.lt-sm>swap_vert</mat-icon>
     </button>
-    <currency-input #currInpLeft
+    <currency-input #currInpRight
                     [(value)]="valueRight"
                     [(currency)]="currencyRight"
                     (valueChange)="onRightChange()"
-                    (currencyChange)="onRightChange()">
+                    (currencyChange)="onRightChange()"
+                    [busy]="currencyLeft">
     </currency-input>
   </div>
 </div>

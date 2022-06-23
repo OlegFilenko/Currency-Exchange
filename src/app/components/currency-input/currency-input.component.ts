@@ -1,4 +1,5 @@
 import { ChangeDetectorRef } from '@angular/core';
+import { IterableDiffers } from '@angular/core';
 import { Component, EventEmitter, Input, Output, ChangeDetectionStrategy } from '@angular/core';
 import { CurrencyService } from '../../services/currensy/currency.service';
 
@@ -12,8 +13,15 @@ import { CurrencyService } from '../../services/currensy/currency.service';
 export class CurrencyInputComponent  {
   readonly currencies: string[] = [];
 
+  availableCurrencies: string[] = [];
+
   @Input() value: number;
   @Input() currency: string;
+
+  @Input()
+  set busy(val: string) {
+    this.availableCurrencies = this.currencies.filter(item => item != val);
+  }
 
   @Output() valueChange: EventEmitter<number> = new EventEmitter<number>();
   @Output() currencyChange: EventEmitter<string> = new EventEmitter<string>();

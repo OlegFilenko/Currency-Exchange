@@ -7,7 +7,7 @@
   <mat-form-field fxFlex="60px">
     <mat-label>Валюта</mat-label>
     <mat-select [ngModel]="currency" (selectionChange)="onCurrencyChange($event)">
-      <mat-option *ngFor="let curr of currencies" [value]="curr">
+      <mat-option *ngFor="let curr of availableCurrencies" [value]="curr">
         <div fxLayout="row" fxLayoutGap="7px">
           <icon-flag locale={{currensyService.dict.get(curr).countryA2}}></icon-flag>
           {{curr}}

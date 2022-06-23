@@ -1,16 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\app",
-    "\\src\\app\\components",
-    "\\src\\app\\components\\icon-flag",
-    "\\src\\app\\services",
-    "\\src\\app\\services\\bank",
-    "\\src\\app\\services\\currensy",
-    "\\src\\app\\services\\currensy\\models",
-    "\\src\\environments"
+    "\\src"
   ],
-  "SelectedNode": "\\src\\app\\services\\currensy\\currency.service.ts",
+  "SelectedNode": "\\src\\app",
   "PreviewInSolutionExplorer": false
 }

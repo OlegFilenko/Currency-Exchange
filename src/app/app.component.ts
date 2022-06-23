@@ -56,7 +56,6 @@ export class AppComponent implements OnInit {
     this._getRate(Direction.LTR);
   }
 
-
   onLeftChange(): void {
     this._onChange(Direction.LTR);
   }
@@ -71,7 +70,6 @@ export class AppComponent implements OnInit {
     this.currencyRight = tempCurr;
     this._getRate(Direction.LTR);
   }
-
 
   private _getRate(direction: Direction): void {
     const currencyArr: string[] = [this.currencyLeft, this.currencyRight];

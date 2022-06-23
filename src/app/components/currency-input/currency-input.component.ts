@@ -27,7 +27,6 @@ export class CurrencyInputComponent  {
   @Output() currencyChange: EventEmitter<string> = new EventEmitter<string>();
 
   constructor(
-    private readonly changeDetector: ChangeDetectorRef,
     public readonly currensyService: CurrencyService
   ) {
     this.currencies = currensyService.list;
